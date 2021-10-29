@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Allison&family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header class="barra sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo.png" alt="Logo página">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">    
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/disenio.html">Diseño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/docencia.html">Docencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/fotografia.html">Fotografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ilustracion.html">Ilustración</a>
+                    </li>
+                </ul>   
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="gridInicio">
+                <h1 id="tituloPrincipal">Belén Caputo</h1>
+                <img src="media/biografia.jpg" alt="Foto Retrato">
+                <h2 class="titulosPaginas">Biografía</h2>
+                <!-- Texto Biografía -->
+                <div>    
+                    <p class="textoArticulo">
+                        Río Gallegos 1989
+                    </p>
+                    <br>
+                    <p class="textoArticulo">
+                        Después de haber terminado el secundario en San Carlos de Bariloche, donde viví la mayor parte de mi vida, hice un intercambio estudiantil de 6 meses en Indiana, Estados Unidos. A la vuelta de mi viaje estudié durante dos años Diseño Industrial en la Universidad de Buenos Aires, y decidí virar para hacer Diseño de Indumentaria en la misma facultad, donde me recibí en el 2018. 
+                    </p>
+                    <p class="textoArticulo">
+                        En el marco de la materia de Diseño de Accesorios desarrollé una colección de objetos gestados a partir de una búsqueda personal que acabado el curso siguieron creciendo. Expuse en Galería Context de Barcelona España, Galería Caractere de Neuchatel Suiza,  Galería Beeld & Aambeeld de Enschede Holanda,  Galería Cebra de Duesseldorf Alemania, en MALBA Tienda y Puro Diseño en Buenos Aires Argentina. 
+                    </p>
+                    <p class="textoArticulo">    
+                        Soy parte del equipo docente desde el 2016 en la cátedra Kweitel-Kohon, de la materia Diseño de Accesorios en la Facultad de Arquitectura, Diseño y Urbanismo, UBA.
+                    </p> 
+                    <p class="textoArticulo">   
+                        Mi interés por el cuerpo en movimiento, mi pasión por el arte, la naturaleza y mi necesidad de expresarme, están presentes en cada actividad en la que me involucro, sin importar el soporte.
+                    </p>
+                </div>    
+            </div>
+        </article>
+        <div class="formularioInicio">
+            <h3 class="tituloSecundario">Contacto</h3>
+            <form action="" class="textoArticulo">
+                <div class="form-group row">
+                    <label for="nombre" class="col-2 col-form-label">Nombre</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                </div>  
+                <div class="form-group row">
+                    <label for="mail" class="col-2 col-form-label">E-mail</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="mail" placeholder="Ingrese su E-mail">
+                    </div>
+                </div>
+                <div class="form-check">
+                    <label for="news" class="form-check-label">¿Desea recibir el newsletter?</label>
+                    <input type="checkbox" class="form-check-input" id="news">
+                </div>
+                <label for="temaNewsletter">Tema del newsletter</label>
+                <select class="custom-select" name="" id="temaNewsletter">
+                    <option selected>Elegir...</option>
+                    <option value="">Diseño</option>
+                    <option value="">Docencia</option>
+                    <option value="">Fotografía</option>
+                    <option value="">Ilustración</option>
+                </select>
+                <div class="form-group">
+                    <label for="comentario">Comentarios</label>
+                    <textarea class="form-control" name="" id="comentario" rows="3"></textarea>
+                </div>      
+                <input class="btn btn-info btn-sm" type="submit" data-bs-toggle="modal" data-bs-target="formularioEnviado" value="Enviar Formulario">
+                <input class="btn btn-info btn-sm" type="reset" value="Resetear Formulario">
+            </form>
+        </div>
+    </main>
+
+    <footer class="barra">
+        <p>©2021</p>
+        <!--Redes-->
+        <div>
+            <a href="">
+                <img src="media/redes/facebook.png" alt="Facebook Logo">
+            </a>
+            <a href="">
+                <img src="media/redes/instagram.png" alt="Instagram Logo">
+            </a>
+            <a href="">
+                <img src="media/redes/behance.png" alt="Behance Logo">
+            </a>
+            <a href="">
+                <img src="media/redes/linkedin.png" alt="Linkedin Logo">
+            </a>
+            <a href="">
+                <img src="media/redes/mail.png" alt="Mail Logo">
+            </a>
+        </div>    
+    </footer>
+
+    <!-- Script para Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

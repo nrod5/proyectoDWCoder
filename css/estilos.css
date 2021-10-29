@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../media/papyrus.png);
+}
+
+/*                                FUENTES */
+.titulosPaginas {
+    color: #E85D04;
+    font-family: 'Hina Mincho', serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+#tituloPrincipal {
+    font-family: 'Allison', cursive;
+    color: #DC2F02;
+    font-size: 7em;
+    text-align: center;
+}
+
+.tituloSecundario {
+    font-family: 'Hina Mincho', serif;
+    color: #370617;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.textoArticulo {
+    color: #6A040F;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+/*                                      FIN FUENTES */
+
+/*                                      HEADER Y FOOTER */
+
+
+
+footer p {
+    color: rgb(78, 51, 128);
+    display: inline-block;
+}
+
+
+.barra {
+    background-image: linear-gradient(to bottom,#ffb908,#F48C06);
+    font-family: 'Hina Mincho', serif;
+    color: #03071E;
+    font-size: 20px;
+}
+
+/*          ESTILO HEADER SIN BOOTSTRAP
+
+header.barra {
+    position: sticky;
+    top: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #03071E;
+}
+
+header a:visited {
+    color: #03071E;
+}
+
+header a:hover {
+    color: #6A040F;
+}
+
+nav li {
+    color: rgb(228, 136, 102);
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 5px;
+} 
+
+ul {
+    list-style: none;
+}
+
+*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer a img {
+    margin-top: 5px;
+}
+
+footer p {
+    margin-left: 15px;
+}
+
+
+/*                                   FIN HEADER Y FOOTER */
+
+
+/*                                   INICIO */
+
+.gridInicio {
+    display: grid;
+    margin: 20px 0px 5px 0px;
+    width: 100%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 10% 70%; 
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "titulo titulo"
+                         "foto subtitulo"
+                         "foto texto";
+}
+
+.gridInicio h1{
+    grid-area: titulo;
+}
+
+.gridInicio h2{
+    grid-area: subtitulo;
+    justify-self: left;
+}
+
+.gridInicio img{
+    grid-area: foto;
+}
+
+.gridInicio div {
+    grid-area: texto;
+    padding-right: 15px;
+}
+
+.gridInicio div p {
+    text-align: left;
+}
+
+.formularioInicio {
+    margin-top: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: ". s1 s2 .";
+}
+
+.formularioInicio h3 {
+    grid-area: s1;
+}
+
+.formularioInicio form {
+    grid-area: s2;
+}
+
+/*                                      FIN INICIO */
+
+/*                                   DISEÑO */
+
+.contenedorDisenio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorDisenio img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.imgPequenia img {
+    height: 150px;
+    width: 150px;
+}
+
+.videoIndumentaria {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+
+/*                                  FIN DISEÑO */
+
+/*                                  DOCENCIA   */
+
+.articuloFlex {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+.fotoDocencia img {
+    object-fit: cover;
+    height: 450px;
+    width: 700px;
+    margin: 15px;
+}
+
+.contenedorDocencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.tituloLista {
+    color: rgb(211, 114, 130);
+}
+
+table td {
+    color: rgb(138, 74, 85);
+}
+
+/*                                  FIN DOCENCIA */
+
+
+/*                                      FOTOGRAFIA */
+
+.calesita {
+    width: 600px;
+    margin: 15px auto 15px auto;
+}
+
+.galeriaFotos {
+    display: grid;
+    padding: 5px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    justify-content: space-around;
+}
+
+.galeriaFotos img {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    margin: 15px auto 15px auto;
+}
+
+/*                                   FIN FOTOGRAFIA */
+
+/*                                   ILUSTRACION */
+
+.galeriaIlustracion {
+    display: grid;
+    margin: 15px;
+    width: 100%;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 50% 50%;
+    justify-content: space-around;
+}
+
+.galeriaIlustracion img {
+    object-fit: scale-down;
+    width: 250px;
+    height: 250px;
+    margin: 15px auto 15px auto;
+}
+
+/*                                  FIN ILUSTRACION */
+
+
+
+
+/* RESPONSIVE INICIO */
+
+@media only screen and (max-width: 992px){
+
+    .gridInicio {
+        grid-template-areas: "titulo titulo"
+                             "subtitulo subtitulo"
+                             "foto foto"
+                             "texto texto";
+    }
+    
+    .gridInicio h2{
+        justify-self: center;
+    }
+
+    .gridInicio div {
+        margin-top: 10px;
+    }
+
+    .formularioInicio {
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 30% 70%;
+        grid-template-areas: ". s1 ."
+                             ". s2 .";
+}
+
+    .formularioInicio form {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    h3 {
+        display: none;
+    }
+
+    form{
+        display: none;
+    }
+
+    
+
+}
+
