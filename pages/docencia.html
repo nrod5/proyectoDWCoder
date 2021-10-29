@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilo CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Allison&family=Hina+Mincho&display=swap" rel="stylesheet">
@@ -46,9 +51,9 @@
     <main>
         <h1 class="titulosPaginas">Docencia</h1>
 
-        <article class="articuloFlex">
+        <article class="articuloFlex" data-aos="fade-right" data-aos-duration="3000">
             <div class="fotoDocencia">
-                <img src="../media/docencia/docencia1.JPG" alt="Aula con alumnos en FADU">
+                <img class="rounded" src="../media/docencia/docencia1.JPG" alt="Aula con alumnos en FADU">
             </div>    
             <div>
                 <p class="textoArticulo">
@@ -62,7 +67,7 @@
             </div>
         </article>
 
-        <article class="articuloFlex">
+        <article class="articuloFlex" data-aos="fade-left" data-aos-duration="3000">
             <div>
                 <p class="textoArticulo">
                     El debate sobre las palabras.
@@ -74,17 +79,17 @@
                 </p>
             </div>
             <div class="fotoDocencia">
-                <img src="../media/docencia/docencia2.JPG" alt="Imagen fuera de foco de clase teórica">
+                <img class="rounded" src="../media/docencia/docencia2.JPG" alt="Imagen fuera de foco de clase teórica">
             </div>
         </article>
 
-        <article class="articuloFlex">
+        <article class="articuloFlex" data-aos="fade-right" data-aos-duration="3000">
             <div class="fotoDocencia">
-                <img src="../media/docencia/docencia3.JPG" alt="Corrección de trabajo por grupo docente">
+                <img class="rounded" src="../media/docencia/docencia3.JPG" alt="Corrección de trabajo por grupo docente">
             </div>
             <div>
                 <p class="textoArticulo">
-                    Editar.
+                    Edición
                 </p>
                 <p class="textoArticulo">
                     En el taller presencial, lxs estudiantes presentan/ disponen su trabajo sobre una mesa y se retiran a hacer un esquicio ( ejercicio corto del día).
@@ -94,7 +99,7 @@
             </div>
         </article>
         
-        <section class="contenedorDocencia">
+        <section class="contenedorDocencia" data-aos="fade-left" data-aos-duration="3000">
             <h2 class="tituloSecundario">Cursos Disponibles</h2>
             <table class="textoArticulo">
                 <tr>
@@ -164,6 +169,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Script para animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
