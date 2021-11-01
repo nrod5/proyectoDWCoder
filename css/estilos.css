@@ -119,6 +119,7 @@ footer p {
 
 .formularioInicio {
     margin-top: 25px;
+    margin-bottom: 25px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -245,7 +246,7 @@ table td {
 
 .galeriaIlustracion img {
     
-    object-fit: contain;
+    object-fit: fill;
     width: 250px;
     height: 250px;
     margin: 15px auto 15px auto;
