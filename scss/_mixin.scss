@@ -1,0 +1,5 @@
+@mixin fuentes($color, $tamanio) {
+    text-align: center;
+    color: $color;
+    font-size: $tamanio;
+}

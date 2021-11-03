@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*                                  FOTOGRAFIA */
+/*                                  ILUSTRACION */
 * {
   margin: 0;
   padding: 0; }
@@ -8,22 +10,22 @@ body {
 
 /*                                FUENTES */
 .titulosPaginas {
-  color: #E85D04;
   font-family: 'Hina Mincho', serif;
-  font-size: 4em;
-  text-align: center; }
+  text-align: center;
+  color: #E85D04;
+  font-size: 4em; }
 
 #tituloPrincipal {
   font-family: 'Allison', cursive;
+  text-align: center;
   color: #DC2F02;
-  font-size: 7em;
-  text-align: center; }
+  font-size: 7em; }
 
 .tituloSecundario {
   font-family: 'Hina Mincho', serif;
+  text-align: center;
   color: #370617;
-  font-size: 2.5em;
-  text-align: center; }
+  font-size: 2.5em; }
 
 .textoArticulo {
   color: #6A040F;
@@ -42,11 +44,9 @@ body {
 
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-between; }
   footer p {
     color: #4e3380;
-    display: inline-block;
     margin-left: 15px; }
   footer a {
     text-decoration: none;
@@ -97,6 +97,7 @@ footer {
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center; }
   .contenedorDisenio img {
@@ -104,36 +105,42 @@ footer {
     width: 200px;
     object-fit: cover; }
 
+.saltoLineaFlex {
+  width: 100%;
+  height: 0%;
+  display: none; }
+
 .imgPequenia img {
   height: 150px;
   width: 150px; }
 
 .videoIndumentaria {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; }
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; }
 
 /*                                  FIN DISEÑO */
 /*                                  DOCENCIA   */
 .articuloFlex {
   display: flex;
-  margin: 15px;
+  margin: 5px 10px;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .fotoDocencia img {
   object-fit: cover;
-  height: 450px;
-  width: 700px;
-  margin: 15px; }
+  height: 337.5px;
+  width: 525px;
+  margin: 5px; }
 
-.contenedorDocencia {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch; }
+.contenedorDocencia table {
+  margin-left: 0px; }
+
+.contenedorDocencia .textoArticulo {
+  text-align: center; }
+
+.contenedorDocencia table, .contenedorDocencia th, .contenedorDocencia td {
+  border: 1px solid #4d0f0f; }
 
 .tituloLista {
   color: #d37282; }
@@ -152,28 +159,29 @@ table td {
   justify-content: space-around; }
   .galeriaFotos img {
     object-fit: cover;
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
     margin: 15px auto 15px auto; }
 
 /*                                   FIN FOTOGRAFIA */
 /*                                   ILUSTRACION */
 .galeriaIlustracion {
   display: grid;
-  margin: 15px;
-  width: 100%;
+  margin: 5px;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: 50% 50%;
   justify-content: space-around; }
   .galeriaIlustracion img {
     object-fit: fill;
-    width: 250px;
+    width: 230px;
     height: 250px;
-    margin: 15px auto 15px auto; }
+    margin-bottom: 15px;
+    margin-top: 15px; }
 
 /*                                  FIN ILUSTRACION */
-/* RESPONSIVE INICIO */
+/*                                                        RESPONSIVE  HASTA 992px */
 @media only screen and (max-width: 992px) {
+  /*                                              INICIO */
   .gridInicio {
     grid-template-areas: "titulo titulo" "subtitulo subtitulo" "foto foto" "texto texto"; }
     .gridInicio h2 {
@@ -185,4 +193,55 @@ table td {
     grid-template-rows: 30% 70%;
     grid-template-areas: ". s1 ." ". s2 ."; }
     .formularioInicio form {
-      text-align: center; } }
+      text-align: center; }
+  /*                                               DISEÑO */
+  .contenedorDisenio {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .imgPequenia img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover; }
+  .saltoLineaFlex {
+    display: block;
+    margin-top: 15px; }
+  .videoIndumentaria iframe {
+    width: 590px; }
+  /*                                            DOCENCIA */
+  .articuloFlex {
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*                                              FOTOGRAFIA */
+  .galeriaFotos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+    .galeriaFotos img {
+      height: 292.5px;
+      width: 292.5px; }
+  /*                                              ILUSTRACION */
+  .galeriaIlustracion {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 25%);
+    align-items: center;
+    justify-items: center; } }
+
+/*                                                        RESPONSIVE  HASTA 600px */
+@media only screen and (max-width: 600px) {
+  /*                                    DISEÑO */
+  .contenedorDisenio {
+    flex-direction: column; }
+    .contenedorDisenio img {
+      margin-bottom: 10px; }
+  .saltoLineaFlex {
+    display: none; }
+  /*                                   DOCENCIA */
+  .fotoDocencia img {
+    height: 225px;
+    width: 350px; }
+  /*                                  FOTOGRAFIA */
+  .galeriaFotos {
+    grid-template-columns: 1fr; }
+  /*                                  FOTOGRAFIA */
+  .galeriaIlustracion img {
+    height: 187.5px;
+    width: 172.5px; } }
